@@ -1,15 +1,9 @@
-<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../polymer/polymer.html">
+<script src="../moment/moment.js"></script>
 
 <dom-module id="deep-moment">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]!</h2>
   </template>
-
   <script>
     /**
      * `deep-moment`
@@ -19,18 +13,5 @@
      * @polymer
      * @demo demo/index.html
      */
-    class DeepMoment extends Polymer.Element {
-      static get is() { return 'deep-moment'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'deep-moment'
-          }
-        };
-      }
-    }
-
-    window.customElements.define(DeepMoment.is, DeepMoment);
   </script>
 </dom-module>
